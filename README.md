@@ -5,7 +5,8 @@ I am a mobile developer  from  Japan!!
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=shooooooma415&theme=onedark&column=7
 )](https://github.com/ryo-ma/github-profile-trophy)
-my skills
+# my skills
+
 <img alt="my skills" src="https://skillicons.dev/icons?theme=light&perline=8&i=go,python,js,html,css,nextjs,firebase,github,react,ts,mysql,docker" />
 
 </p>
