@@ -7,7 +7,7 @@ I am a backend developer  from  Japan!!
 )](https://github.com/ryo-ma/github-profile-trophy)
 # my skills
 
-<img alt="my skills" src="https://skillicons.dev/icons?theme=light&perline=8&i=go,python,js,html,css,nextjs,firebase,github,react,ts,mysql,docker" />
+<img alt="my skills" src="https://skillicons.dev/icons?theme=light&perline=8&i=go,python,js,html,css,nextjs,firebase,supabase,github,react,ts,mysql,docker" />
 
 </p>
 
