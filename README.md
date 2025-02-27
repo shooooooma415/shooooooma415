@@ -3,7 +3,7 @@ I am a backend developer  from  Japan!!
   <img alt="Top Langs" height="150px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shooooooma415&layout=compact&show_icons=true&theme=onedark" />
   <img alt="github stats" height="150px" src="https://github-readme-stats.vercel.app/api?username=shooooooma415&theme=onedark&show_icons=ture" />
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=shooooooma415&theme=onedark&column=7
+[(https://github-profile-trophy.vercel.app/?username=shooooooma415&theme=onedark&column=7
 )](https://github.com/ryo-ma/github-profile-trophy)
 # my skills
 
