@@ -1,25 +1,43 @@
-name: GitHub-Profile-Summary-Cards
+name: Debug Profile Summary Cards
 
 on:
-  schedule: # execute every 24 hours
-    - cron: "* */24 * * *"
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: generate
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: vn7n24fzkq/github-profile-summary-cards@release
-        env:
-          GITHUB_TOKEN: ${{ secrets.SECRETS_TOKEN }}
-        with:
-          USERNAME: ${{ github.repository_owner }}
-          
       - name: Checkout default branch
         uses: actions/checkout@v4
         with:
           ref: main
-          persist-credentials: true  
+          persist-credentials: true
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Generate profile summary cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.SECRETS_TOKEN }}
+
+      - name: Inspect Git state before push
+        run: |
+          echo "=== Remote ==="
+          git remote -v
+          echo
+          echo "=== Branch ==="
+          git branch --show-current
+          echo
+          echo "=== Status ==="
+          git status
+          echo
+          echo "=== Dry-run Push ==="
+          GIT_TRACE=1 GIT_CURL_VERBOSE=1 git push --dry-run origin main || true
+        shell: bash
