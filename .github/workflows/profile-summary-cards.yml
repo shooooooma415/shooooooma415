@@ -1,9 +1,13 @@
 name: GitHub-Profile-Summary-Cards
 
 on:
-  schedule: # execute every 24 hours
-    - cron: "* */24 * * *"
+  schedule:
+    # 毎日 00:00 UTC 実行
+    - cron: '0 0 * * *'    # At the end of every day  [oai_citation_attribution:2‡jasonet.co](https://jasonet.co/posts/scheduled-actions/?utm_source=chatgpt.com)
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -11,9 +15,24 @@ jobs:
     name: generate
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: vn7n24fzkq/github-profile-summary-cards@release
+      - name: Checkout default branch
+        uses: actions/checkout@v4
+        with:
+          # デフォルトブランチ名（リポジトリ設定に合わせて変更）
+          ref: main
+          # GITHUB_TOKEN をそのまま git credential に残す
+          persist-credentials: true  [oai_citation_attribution:3‡GitHub](https://github.com/actions/checkout?utm_source=chatgpt.com)
+
+      - name: Configure Git for commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"  [oai_citation_attribution:4‡Stack Overflow](https://stackoverflow.com/questions/11656761/git-please-tell-me-who-you-are-error?utm_source=chatgpt.com)
+
+      - name: Generate profile summary cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
+          # リポジトリに登録したシークレット名に合わせてください
           GITHUB_TOKEN: ${{ secrets.SECRETS_TOKEN }}
         with:
           USERNAME: ${{ github.repository_owner }}
+          # BRANCH_NAME, UTC_OFFSET, EXCLUDE, AUTO_PUSH はデフォルトが有効なので省略可能
