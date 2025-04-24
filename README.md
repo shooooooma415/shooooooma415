@@ -5,29 +5,15 @@ I am a software developer from Japan!!
 
 [![Top Langs](https://github-profile-trophy.vercel.app/?username=shooooooma415&theme=onedark&column=7
 )](https://github.com/ryo-ma/github-profile-trophy)
-# my skills
 
-<img alt="my skills" src="https://skillicons.dev/icons?theme=light&perline=8&i=go,python,js,ts,html,css,react,nextjs,swift,firebase,supabase,github,postgresql,mysql,docker" />
-
-</p>
 
 
 [![](https://raw.githubusercontent.com/shooooooma415/shooooooma415/main/profile-summary-card-output/discord_old_blurple/0-profile-details.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 [![](https://raw.githubusercontent.com/shooooooma415/shooooooma415/main/profile-summary-card-output/discord_old_blurple/1-repos-per-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards) [![](https://raw.githubusercontent.com/shooooooma415/shooooooma415/main/profile-summary-card-output/discord_old_blurple/2-most-commit-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 [![](https://raw.githubusercontent.com/shooooooma415/shooooooma415/main/profile-summary-card-output/discord_old_blurple/3-stats.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards) [![](https://raw.githubusercontent.com/shooooooma415/shooooooma415/main/profile-summary-card-output/discord_old_blurple/4-productive-time.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 
+# my skills
 
-<!--
-shooooooma415/shooooooma415 is a ✨ special ✨ repository because its README.md (this file) appears on your GitHub profile.
+<img alt="my skills" src="https://skillicons.dev/icons?theme=light&perline=8&i=go,python,js,ts,html,css,react,nextjs,swift,firebase,supabase,github,postgresql,mysql,docker" />
 
-Here are some ideas to get you started:
-
-🔭 I’m currently working on ...
-🌱 I’m currently learning ...
-👯 I’m looking to collaborate on ...
-🤔 I’m looking for help with ...
-💬 Ask me about ...
-📫 How to reach me: ...
-😄 Pronouns: ...
-⚡ Fun fact: ...
--->
+</p>
