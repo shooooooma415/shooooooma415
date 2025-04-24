@@ -16,7 +16,7 @@
 
 
 
-# My　Skills
+# MySkills
 
 <img alt="my skills" src="https://skillicons.dev/icons?theme=light&perline=8&i=go,python,js,ts,html,css,react,nextjs,swift,firebase,supabase,github,postgresql,mysql,docker" />
 
