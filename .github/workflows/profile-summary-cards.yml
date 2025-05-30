@@ -1,19 +1,26 @@
 name: GitHub-Profile-Summary-Cards
 
 on:
-  schedule: # execute every 24 hours
-    - cron: '* */24 * * *'
+  schedule: # 毎日午前0時 (UTC) に実行
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     name: generate
-
+    permissions: # <<< 修正点1: ジョブに必要な権限を付与
+      contents: write
     steps:
-      - uses: actions/checkout@v2
-      - uses: vn7n24fzkq/github-profile-summary-cards@release
+      - name: Checkout Repository
+        uses: actions/checkout@v4 # <<< 修正点2: バージョンを更新 (推奨)
+
+      - name: GitHub Profile Summary Cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
-          GITHUB_TOKEN: ${{ secrets.SECRETS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # <<< 修正点3: 標準の GITHUB_TOKEN を使用
         with:
           USERNAME: ${{ github.repository_owner }}
+          # 他に必要なオプションがあればここに追加してください
+          # 例:
+          # UTC_OFFSET: 9 # 日本時間 (JST) にする場合
