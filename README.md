@@ -18,6 +18,6 @@
 
 # MySkills
 
-<img alt="my skills" src="https://skillicons.dev/icons?theme=light&perline=8&i=go,python,swift,js,ts,html,css,react,nextjs,unity,firebase,supabase,redis,postgresql,mysql,mongo,docker,gcp,github" />
+<img alt="my skills" src="https://skillicons.dev/icons?theme=light&perline=8&i=go,python,swift,js,ts,cs,html,css,react,nextjs,unity,firebase,supabase,redis,postgresql,mysql,mongo,docker,gcp,github" />
 
 </p>
